@@ -2,4 +2,5 @@
     display:flex;
     justify-content: center;
     border-bottom: solid black;
+    max-width: 1200px;
 }
