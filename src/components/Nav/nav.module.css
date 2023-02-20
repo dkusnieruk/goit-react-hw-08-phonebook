@@ -1,0 +1,16 @@
+.nav{
+    max-width: 1200px;
+    display:flex;
+    justify-content:space-between ;
+    height: 50px;
+    align-items: center;
+    border-bottom: solid black;
+}
+
+.singleNav{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    padding:10px;
+    align-items: center;
+}
