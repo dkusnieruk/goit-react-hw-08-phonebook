@@ -2,8 +2,6 @@ import { createSlice } from '@reduxjs/toolkit';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// axios.defaults.baseURL = 'https://63ee5e34d466e0c18baeba99.mockapi.io';
-console.log(axios.defaults.baseURL);
 const initialState = {
   items: [],
   isLoading: false,

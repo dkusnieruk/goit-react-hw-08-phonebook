@@ -1,4 +1,4 @@
-import Nav from "./Nav/Nav";
+import { AppBar } from "./AppBar/AppBar";
 import { Outlet } from "react-router-dom";
 import css from '../components/main.module.css'
 
@@ -6,7 +6,7 @@ const Template = () =>{
     return (
         <>
         <header>
-            <Nav/>
+        <AppBar/>
         </header>
         <main className={css.main}>
         <Outlet/>

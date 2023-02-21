@@ -15,7 +15,7 @@ export const  Registration=()=> {
         const nameText = inputName.current.value;
         const emailText= inputEmail.current.value;
         const passwordText = inputPassword.current.value;
-        
+
         dispatch(
             register({
                 name : nameText,
@@ -28,7 +28,8 @@ export const  Registration=()=> {
         inputPassword.current.value='';
     }
 
-    return (<div className={css.registerForm}>
+    return (
+    <div className={css.registerForm}>
     <h1 className={css.title}>Registration Page</h1>
     <form 
     className={css.form}  
