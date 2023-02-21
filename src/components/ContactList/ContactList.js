@@ -10,7 +10,7 @@ function ContactList() {
   const filter = useSelector(selectFilters);
   const filterValue = filter.filters;
   const initialArray = useSelector(selectArray);
-  
+
   return (
     <>
       {initialArray.isLoading && (

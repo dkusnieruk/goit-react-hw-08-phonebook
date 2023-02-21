@@ -14,10 +14,10 @@ code {
     monospace;
 }
 
-a.active{
+a.active {
   text-decoration: underline;
 }
 
-a.active:hover{
-  color:blue;
+a.active:hover {
+  color: blue;
 }

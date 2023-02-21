@@ -1,15 +1,14 @@
-.nav{
-    max-width: 1200px;
-    display:flex;
-    justify-content:space-between ;
-    height: 50px;
-
+.nav {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
 }
 
-.singleNav{
-    text-decoration: none;
-    color:black;
-    font-weight: 500;
-    padding:10px;
-    align-items: center;
+.singleNav {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 10px;
+  align-items: center;
 }

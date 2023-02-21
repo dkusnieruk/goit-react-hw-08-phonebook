@@ -1,26 +1,24 @@
 .form {
-    width: 320px;
-  }
-  
-  .label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-  }
-  
-  .registerForm{
-    display:flex;
-    flex-direction: column;
-  }
+  width: 320px;
+}
 
-  .title{
-    text-align: center;
-  }
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
 
-  .button{
-    display:flex;
-    margin: 10px auto;
-    padding:10px 20px;
+.registerForm {
+  display: flex;
+  flex-direction: column;
+}
 
+.title {
+  text-align: center;
+}
 
-  }
+.button {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
