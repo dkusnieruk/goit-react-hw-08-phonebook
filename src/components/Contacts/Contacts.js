@@ -7,8 +7,9 @@ import {
 } from '../../Redux/ContactsSlice';
 import css from '../Contacts/contacts.module.css';
 import { useEffect } from 'react';
-
-export function Contacts() {
+import ContactList from 'components/ContactList/ContactList';
+import { Filters } from 'components/Filter/Filter';
+function Contacts() {
   const inputName = useRef(null);
   const inputNumber = useRef(null);
   const contacts = useSelector(selectContacts);
@@ -81,6 +82,11 @@ export function Contacts() {
           Add Contact
         </button>
       </form>
+     <Filters/>
+     <ContactList/>
+   
     </>
   );
 }
+
+export default Contacts
