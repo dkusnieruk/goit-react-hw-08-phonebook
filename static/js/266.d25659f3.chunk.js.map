@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/266.d25659f3.chunk.js","mappings":"4GAOA,UAPA,WACI,OAAQ,0BACJ,kDAGP,C","sources":["pages/Home.js"],"sourcesContent":["function Home() {\n    return (<div>\n        <h1>PhoneBook Home Page </h1>\n       \n    </div>  );\n}\n\nexport default Home;"],"names":[],"sourceRoot":""}
