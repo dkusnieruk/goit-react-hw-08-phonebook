@@ -5,9 +5,7 @@ import { RestrictedRoute } from './RestrictedRoute';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'Redux/operations';
 import { useAuth } from './hooks';
-// import { Contacts } from 'components/Contacts/Contacts';
-// import ContactList from './ContactList/ContactList';
-// import { Filters } from 'components/Filter/Filter';
+
 const Home = lazy (()=> import ('pages/Home'));
 const Template = lazy (()=> import ('./Template'));
 const Login = lazy (() => import ('pages/Login'));
