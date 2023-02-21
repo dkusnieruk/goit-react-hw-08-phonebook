@@ -8,7 +8,7 @@ function ContactItem({ contact }) {
   return (
     <>
       <li className={css.singleItem} key={contact.id}>
-        {contact.name}: {contact.phone}
+        {contact.name}: {contact.number}
         <button
           className={css.removeButton}
           type="button"

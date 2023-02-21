@@ -38,7 +38,7 @@ function Contacts() {
       dispatch(
         addContact({
           name: contactText,
-          phone: numberText,
+          number: numberText,
         })
       );
     inputName.current.value = '';
@@ -82,11 +82,10 @@ function Contacts() {
           Add Contact
         </button>
       </form>
-     <Filters/>
-     <ContactList/>
-   
+      <Filters />
+      <ContactList />
     </>
   );
 }
 
-export default Contacts
+export default Contacts;

@@ -17,6 +17,7 @@ function ContactList() {
         <p className={css.loader}>Loading data ... </p>
       )}
       {initialArray.error && <p className={css.loader}>{initialArray.error}</p>}
+
       <ul className={css.listMain}>
         {contacts
           .filter(contact => {
