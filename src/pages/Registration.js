@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { register } from 'Redux/operations';
 import css from '../pages/register.module.css';
 
-export const Registration = () => {
+const  Registration =  () =>  {
   const dispatch = useDispatch();
   const inputName = useRef(null);
   const inputEmail = useRef(null);
@@ -50,3 +50,4 @@ export const Registration = () => {
     </div>
   );
 };
+export default Registration
