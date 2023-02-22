@@ -20,14 +20,6 @@ function ContactItem({ contact }) {
         >
           <Delete />
         </IconButton>
-        {/* <button
-          className={css.removeButton}
-          type="button"
-          id={contact.id}
-          onClick={() => dispatch(deleteContact(contact.id))}
-        >
-          X
-        </button> */}
       </li>
     </>
   );

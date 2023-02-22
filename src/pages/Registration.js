@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useRef } from 'react';
+import { Button } from '@mui/material';
 import { register } from 'Redux/operations';
 import css from '../pages/register.module.css';
 
@@ -43,9 +44,14 @@ const Registration = () => {
           Password
           <input type="password" name="password" ref={inputPassword} />
         </label>
-        <button className={css.button} type="submit">
+        <Button
+          variant="contained"
+          color="success"
+          className={css.button}
+          type="submit"
+        >
           Register
-        </button>
+        </Button>
       </form>
     </div>
   );
