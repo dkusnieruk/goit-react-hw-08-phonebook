@@ -44,14 +44,15 @@ const Registration = () => {
           Password
           <input type="password" name="password" ref={inputPassword} />
         </label>
+        <div className={css.button}>
         <Button
           variant="contained"
           color="success"
-          className={css.button}
           type="submit"
         >
           Register
         </Button>
+        </div>
       </form>
     </div>
   );
