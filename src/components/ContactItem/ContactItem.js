@@ -1,5 +1,8 @@
 import { deleteContact } from 'Redux/ContactsSlice';
 import { useDispatch } from 'react-redux';
+import { IconButton } from '@mui/material';
+import { Delete } from '@mui/icons-material';
+
 import propTypes from 'prop-types';
 
 import css from '../ContactItem/contactItem.module.css';
@@ -9,14 +12,22 @@ function ContactItem({ contact }) {
     <>
       <li className={css.singleItem} key={contact.id}>
         {contact.name}: {contact.number}
-        <button
+        <IconButton
+          className={css.removeButton}
+          type="button"
+          id={contact.id}
+          onClick={() => dispatch(deleteContact(contact.id))}
+        >
+          <Delete />
+        </IconButton>
+        {/* <button
           className={css.removeButton}
           type="button"
           id={contact.id}
           onClick={() => dispatch(deleteContact(contact.id))}
         >
           X
-        </button>
+        </button> */}
       </li>
     </>
   );

@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { lazy, Suspense, useEffect } from 'react';
-import { PrivateRoute } from './PrivateRoute';
-import { RestrictedRoute } from './RestrictedRoute';
+import { PrivateRoute } from '../routes/PrivateRoute';
+import { RestrictedRoute } from '../routes/RestrictedRoute';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'Redux/operations';
-import { useAuth } from './hooks';
+import { useAuth } from '../hooks';
 
 const Home = lazy(() => import('pages/Home'));
 const Template = lazy(() => import('./Template'));
@@ -27,32 +27,26 @@ function App() {
       <Suspense fallback={<div>Is loading ...</div>}>
         <Routes>
           <Route path="/" element={<Template />}>
-            <Route path="/goit-react-hw-08-phonebook/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route
-              path="/goit-react-hw-08-phonebook/register"
+              path="/register"
               element={
                 <RestrictedRoute
-                  redirectTo="/goit-react-hw-08-phonebook/contacts"
+                  redirectTo="/contacts"
                   component={<Registration />}
                 />
               }
             />
             <Route
-              path="/goit-react-hw-08-phonebook/login"
+              path="/login"
               element={
-                <RestrictedRoute
-                  redirectTo="/goit-react-hw-08-phonebook/contacts"
-                  component={<Login />}
-                />
+                <RestrictedRoute redirectTo="/contacts" component={<Login />} />
               }
             />
             <Route
-              path="/goit-react-hw-08-phonebook/contacts"
+              path="/contacts"
               element={
-                <PrivateRoute
-                  redirectTo="/goit-react-hw-08-phonebook/login"
-                  component={<Contacts />}
-                />
+                <PrivateRoute redirectTo="/login" component={<Contacts />} />
               }
             />
             <Route path="*" element={<Navigate to="/" />} />

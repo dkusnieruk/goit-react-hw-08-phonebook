@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useRef } from 'react';
 import { logIn } from 'Redux/operations';
+import { Button } from '@mui/material';
 import css from '../pages/login.module.css';
 
 function Login() {
@@ -35,9 +36,16 @@ function Login() {
           Password
           <input ref={passwordInput} type="password" name="password" />
         </label>
-        <button className={css.button} type="submit">
-          Log In
-        </button>
+        <div className={css.button}>
+          <Button
+            variant="contained"
+            color="success"
+            className={css.button}
+            type="submit"
+          >
+            Log In
+          </Button>
+        </div>
       </form>
     </div>
   );

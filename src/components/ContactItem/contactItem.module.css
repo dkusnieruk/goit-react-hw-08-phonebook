@@ -1,7 +1,5 @@
 .removeButton {
   cursor: pointer;
-  color: white;
-  background-color: black;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -9,6 +7,10 @@
   font-size: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
+.removeButton:hover {
+  color: red;
+}
+
 .singleItem {
   width: 500px;
   justify-content: space-between;

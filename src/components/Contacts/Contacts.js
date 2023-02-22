@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Button } from '@mui/material';
 import {
   addContact,
   fetchContacts,
@@ -78,9 +79,14 @@ function Contacts() {
             required
           />
         </label>
-        <button className={css.button} type="submit">
+        <Button
+          variant="contained"
+          color="success"
+          className={css.button}
+          type="submit"
+        >
           Add Contact
-        </button>
+        </Button>
       </form>
       <Filters />
       <ContactList />

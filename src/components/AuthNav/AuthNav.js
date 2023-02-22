@@ -3,16 +3,10 @@ import css from '../AuthNav/AuthNav.module.css';
 export const AuthNav = () => {
   return (
     <div>
-      <NavLink
-        className={css.singleNav}
-        to={`/goit-react-hw-08-phonebook/register`}
-      >
+      <NavLink className={css.singleNav} to={`/register`}>
         Register
       </NavLink>
-      <NavLink
-        className={css.singleNav}
-        to={`/goit-react-hw-08-phonebook/login`}
-      >
+      <NavLink className={css.singleNav} to={`/login`}>
         Log In
       </NavLink>
     </div>
